@@ -1,9 +1,11 @@
 const path = require('path')
 const HtmlWebpackPlugin = require("html-webpack-plugin")
+const {CleanWebpackPlugin} = require("clean-webpack-plugin");
+
 
 module.exports = env => {
 
-    console.log(env)
+    console.log(`${env.folder} content is compiling....`)
 
     return {
         mode: 'production',
@@ -18,6 +20,7 @@ module.exports = env => {
             new HtmlWebpackPlugin({
                 template: path.resolve(__dirname, `./${env.folder}/template.html`)
             }),
+            new CleanWebpackPlugin()
         ],
         module: {
             rules: [
