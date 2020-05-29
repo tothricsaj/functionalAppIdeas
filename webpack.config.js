@@ -6,6 +6,7 @@ module.exports = env => {
     console.log(env)
 
     return {
+        mode: 'production',
         entry: {
             main: `./${env.folder}/index.js`,
         },
@@ -15,7 +16,7 @@ module.exports = env => {
         },
         plugins: [
             new HtmlWebpackPlugin({
-                template: "./src/template.html"
+                template: path.resolve(__dirname, `./${env.folder}/template.html`)
             }),
         ],
         module: {
@@ -23,13 +24,14 @@ module.exports = env => {
                 {
                     test: /\.scss$/,
                     use: [
-                        {
-                          loader: MiniCssExtractPlugin.loader,
-                          options: {
-                            publicPath: './dist/css/style.css',
-                          },
-                        },
-                        // "style-loader", 
+                        // TODO(tothricsaj): I can't make decesion.....style-loader or MiniExtractPlugin. SOOOOOOO haaaaaaaaaaaaaarrrrrrrrrrrrdddddd!!!!!
+                        // {
+                        //   loader: MiniCssExtractPlugin.loader,
+                        //   options: {
+                        //     publicPath: './dist/css/style.css',
+                        //   },
+                        // },
+                        "style-loader", 
                         "css-loader", 
                         "sass-loader" 
                     ]
