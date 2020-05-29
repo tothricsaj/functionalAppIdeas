@@ -1,4 +1,5 @@
 const path = require('path')
+const HtmlWebpackPlugin = require("html-webpack-plugin")
 
 module.exports = env => {
 
@@ -12,23 +13,23 @@ module.exports = env => {
             filename: `[name].bundle.js`,
             path: path.resolve(__dirname, `${env.folder}/dist`),
         },
-        // plugins: [
-        //     new HtmlWebpackPlugin({
-        //         template: "./src/template.html"
-        //     }),
-        // ],
+        plugins: [
+            new HtmlWebpackPlugin({
+                template: "./src/template.html"
+            }),
+        ],
         module: {
             rules: [
                 {
                     test: /\.scss$/,
                     use: [
-                        // {
-                        //   loader: MiniCssExtractPlugin.loader,
-                        //   options: {
-                        //     publicPath: './dist/css/style.css',
-                        //   },
-                        // },
-                        "style-loader", 
+                        {
+                          loader: MiniCssExtractPlugin.loader,
+                          options: {
+                            publicPath: './dist/css/style.css',
+                          },
+                        },
+                        // "style-loader", 
                         "css-loader", 
                         "sass-loader" 
                     ]
