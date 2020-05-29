@@ -1,0 +1,19 @@
+{
+  "name": "functionalappideas",
+  "version": "1.0.0",
+  "description": "So, this repo is owing to learn functional programming in JS. This is the main purpose, nonetheless I need a little practice as well.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tothricsaj/functionalAppIdeas.git"
+  },
+  "author": "tothricsaj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tothricsaj/functionalAppIdeas/issues"
+  },
+  "homepage": "https://github.com/tothricsaj/functionalAppIdeas#readme"
+}
