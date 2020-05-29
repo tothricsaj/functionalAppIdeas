@@ -1,0 +1,9 @@
+node_modules/
+
+# vim misc
+*.swp
+**/*.swp
+*.swo
+**/*.swo
+*.swn
+**/*.swn

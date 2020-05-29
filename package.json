@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/tothricsaj/functionalAppIdeas/issues"
   },
-  "homepage": "https://github.com/tothricsaj/functionalAppIdeas#readme"
+  "homepage": "https://github.com/tothricsaj/functionalAppIdeas#readme",
+  "devDependencies": {
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  }
 }
