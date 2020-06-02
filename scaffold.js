@@ -12,7 +12,9 @@ const html = `
     <title>${process.argv[2]} project</title>
 </head>
 <body>
-    <h1>${process.argv[2]} project</h1>
+    <div class="wrapper">
+        <h1>${process.argv[2]} project</h1>
+    </div>
 </body>
 </html>
 `
