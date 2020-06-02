@@ -25,7 +25,7 @@ body {
 
 const js = `
 import './style.scss'
-console.log('This is the foo')
+console.log('This is the ${process.argv[2]}')
 `
 
 if(!fs.existsSync({folderName})) {
