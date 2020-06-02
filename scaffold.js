@@ -17,13 +17,37 @@ const html = `
 </html>
 `
 
+const scss = `
+body {
+    background-color: deepskyblue;
+}
+`
+
+const js = `
+import './style.scss'
+console.log('This is the foo')
+`
+
 if(!fs.existsSync({folderName})) {
     fs.mkdirSync(folderName)
+
+    console.log(`${folderName} is created`)
+
     fs.writeFile(folderName+'/index.html', html, (err) => {
         if(err) return console.log(err)
 
         console.log(`${folderName}/index.html is written`)
     })
-} else (console.log('Folder already exists'), process.exit())
 
-console.log(`${folderName} is created`)
+    fs.writeFile(folderName+'/style.scss', scss, (err) => {
+        if(err) return console.log(err)
+
+        console.log(`${folderName}/style.scss is written`)
+    })
+
+    fs.writeFile(folderName+'/index.js', js, (err) => {
+        if(err) return console.log(err)
+
+        console.log(`${folderName}/index.js is written`)
+    })
+} else (console.log('Folder already exists'), process.exit())
