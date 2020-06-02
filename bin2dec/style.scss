@@ -7,10 +7,19 @@ body {
 }
 
 .wrapper {
-    width: calc(70% - 40px);
+    width: calc(40% - 40px);
+    height: 300px;
     margin: auto;
     padding: 20px;
     border: 1px solid darkturquoise;
+    position: absolute;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .calculator {
@@ -21,4 +30,6 @@ body {
     padding: 5px;
     border: 1px solid darkturquoise;
     font-weight: bold;
+    text-align: center;
+    cursor: pointer;
 }
