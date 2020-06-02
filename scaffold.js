@@ -19,7 +19,18 @@ const html = `
 
 const scss = `
 body {
-    background-color: deepskyblue;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: #333;
+    color: darkturquoise;
+}
+
+.wrapper {
+    width: calc(70% - 40px);
+    margin: auto;
+    padding: 20px;
+    border: 1px solid darkturquoise;
 }
 `
 
