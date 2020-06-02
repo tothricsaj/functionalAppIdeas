@@ -33,10 +33,10 @@ if(!fs.existsSync({folderName})) {
 
     console.log(`${folderName} is created`)
 
-    fs.writeFile(folderName+'/index.html', html, (err) => {
+    fs.writeFile(folderName+'/template.html', html, (err) => {
         if(err) return console.log(err)
 
-        console.log(`${folderName}/index.html is written`)
+        console.log(`${folderName}/template.html is written`)
     })
 
     fs.writeFile(folderName+'/style.scss', scss, (err) => {
