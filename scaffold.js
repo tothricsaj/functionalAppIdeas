@@ -1,5 +1,9 @@
 #!/usr/bin/env node
 
-let folderName = process.argv[2]
+const fs = require('fs')
+const folderName = process.argv[2]
 
-console.log(folderName)
+if(!fs.existsSync(`./${folderName}`)) fs.mkdirSync(`./${folderName}`)
+else (console.log('Folder already exists'), process.exit())
+
+console.log(`${folderName} is created`)

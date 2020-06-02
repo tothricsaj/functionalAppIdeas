@@ -1,5 +1,18 @@
 node_modules/
 **/dist/
+
+foo/
+bar/
+baz/
+fooBar/
+fooBarBaz/
+
+Foo/
+Bar/
+Baz/
+FooBar/
+FooBarBaz/
+
 # vim misc
 *.swp
 **/*.swp
