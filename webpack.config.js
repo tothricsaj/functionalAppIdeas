@@ -20,7 +20,7 @@ module.exports = env => {
             new HtmlWebpackPlugin({
                 template: path.resolve(__dirname, `./${env.folder}/template.html`)
             }),
-            new CleanWebpackPlugin()
+            // new CleanWebpackPlugin()
         ],
         module: {
             rules: [
