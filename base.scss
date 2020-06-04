@@ -1,0 +1,36 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: #333;
+    color: darkturquoise;
+}
+
+.FAIModalWrapper {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100000;
+}
+
+.FAIModalMessage {
+    width: 400px;
+    height: 250px;
+    background: #00ced1;
+    z-index: 10000;
+    color: #333;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.FAIModalClose {
+position: absolute;
+top: 10px;
+right: 10px;
+}

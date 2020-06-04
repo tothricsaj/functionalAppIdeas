@@ -1,10 +1,4 @@
-body {
-    width: 100vw;
-    height: 100vh;
-    overflow-x: hidden;
-    background-color: #333;
-    color: darkturquoise;
-}
+@import '../base.scss';
 
 .wrapper {
     width: calc(40% - 40px);
