@@ -1,6 +1,8 @@
 import './style.scss'
-import {changeTextContent} from '../base.js'
+import {changeTextContent, getInputValue} from '../base.js'
 
 console.log('This is the bin2dec')
 
-changeTextContent('.output', 'helloBello')
+const convertBtn = document.querySelector('.convertBtn')
+convertBtn.addEventListener('click', () => changeTextContent('.output', getInputValue('#binaryInput')))
+
