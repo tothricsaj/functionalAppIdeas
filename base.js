@@ -12,4 +12,8 @@ export const createModal = (message) => {
     `
 
     document.body.insertAdjacentHTML('afterbegin', dom)
+
+    document.querySelector('.FAIModalClose').addEventListener('click', () => {
+        document.body.removeChild(document.querySelector('.FAIModalWrapper'))
+    })
 }

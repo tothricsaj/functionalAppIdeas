@@ -11,3 +11,4 @@ const convertBin2Dec = (binVal) => parseInt(binVal, 2)
 const convertedDecValue = pipe(pipe(getInputValue, checkBinaryInput), convertBin2Dec)
 
 convertBtn.addEventListener('click', () => changeTextContent('.output', convertedDecValue('#binaryInput')))
+
