@@ -12,14 +12,27 @@ const html = `
     <title>${process.argv[2]} project</title>
 </head>
 <body>
-    <h1>${process.argv[2]} project</h1>
+    <div class="wrapper">
+        <h1>${process.argv[2]} project</h1>
+    </div>
 </body>
 </html>
 `
 
 const scss = `
 body {
-    background-color: deepskyblue;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: #333;
+    color: darkturquoise;
+}
+
+.wrapper {
+    width: calc(70% - 40px);
+    margin: auto;
+    padding: 20px;
+    border: 1px solid darkturquoise;
 }
 `
 
