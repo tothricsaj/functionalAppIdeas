@@ -12,7 +12,7 @@ const clearValue = () => {
 const checkBinaryInput = (input) => 
         input.split('').every((val) => val === '0' || val === '1') ? 
             input : 
-            createModal('This is not binary syntax!!! Please use only 1 or 0')
+            createModal('This is not binary syntax!!! Please use only 1 or 0', clearValue)
 
 const convertBin2Dec = (binVal) => parseInt(binVal, 2)
 const convertedDecValue = pipe(pipe(getInputValue, checkBinaryInput), convertBin2Dec)

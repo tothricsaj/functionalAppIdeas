@@ -4,7 +4,7 @@ export const getInputValue = (inputElem) => {
     return document.querySelector(inputElem).value
 }
 
-export const createModal = (message) => {
+export const createModal = (message, fn) => {
     let dom = `
         <div class="FAIModalWrapper">
             <div class="FAIModalMessage">${message} <span class="FAIModalClose">X</span></div>
@@ -15,5 +15,6 @@ export const createModal = (message) => {
 
     document.querySelector('.FAIModalClose').addEventListener('click', () => {
         document.body.removeChild(document.querySelector('.FAIModalWrapper'))
+        if(fn) fn()
     })
 }
