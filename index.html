@@ -2,9 +2,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./base.scss">
     <title>Functional Programing App Ideas</title>
 </head>
 <body>
     <h1>Functional Programing App Ideas</h1>
+
+    <ul id="appList"></ul>
+
+    <script>
+        let appList = [
+            'bin2dec'
+        ]
+
+        let listWrapper = document.querySelector('#appList')
+
+        appList.forEach((el, i) => {
+            let elem = `
+                <li class="appListElem"><a href="${el}/dist/index.html" target="_blank">${el}</a></li>
+            `
+            listWrapper.insertAdjacentHTML('beforeend', elem)
+        })
+    </script>
 </body>
 </html>

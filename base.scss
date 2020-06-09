@@ -1,9 +1,13 @@
+:root {
+    --main-color: darkturquoise;
+}
+
 body {
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
     background-color: #333;
-    color: darkturquoise;
+    color: var(--main-color);
 }
 
 .FAIModalWrapper {
@@ -19,7 +23,7 @@ body {
 .FAIModalMessage {
     width: 400px;
     height: 250px;
-    background: #00ced1;
+    background: var(--main-color);
     z-index: 10000;
     color: #333;
     padding: 10px;
@@ -34,4 +38,17 @@ body {
     top: 10px;
     right: 10px;
     cursor: pointer;
+}
+
+#appList {
+
+}
+
+.appListElem {
+    width: 100px;
+    height: 50px;
+    padding: 10px;
+    list-style-type: none;
+    color: var(--main-color);
+    border: 1px solid;
 }
