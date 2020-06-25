@@ -1,1 +1,27 @@
 @import '../base.scss';
+
+.wrapper {
+    width: 80vh;
+    height: 80vh;
+    border: 1px solid lightcoral;
+    min-width: 300px;
+    min-height: 300px;
+    position: absolute;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    margin: auto;
+}
+
+
+.borderViwerWrapper {
+    width: 90%;
+    height: 80%;
+    border: 1px solid lightsalmon;
+    margin: 0 auto;
+}
+
+.borderViewer {
+    width: 50vh;
+    height: 50vh;
+    border: 3px solid lightskyblue;
+}
