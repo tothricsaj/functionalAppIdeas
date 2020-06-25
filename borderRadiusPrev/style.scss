@@ -25,3 +25,19 @@
     height: 50vh;
     border: 3px solid lightskyblue;
 }
+
+.controllers {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+
+.controllSlider {
+    border-bottom: 1px solid var(--main-color);
+    margin-bottom: 35px;
+}
+
+.controllSlider p {
+    margin: 0;
+}
+
