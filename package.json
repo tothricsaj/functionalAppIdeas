@@ -1,6 +1,6 @@
 {
   "name": "functionalappideas",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "So, this repo is owing to learn functional programming in JS. This is the main purpose, nonetheless I need a little practice as well.",
   "main": "index.js",
   "scripts": {

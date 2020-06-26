@@ -10,6 +10,10 @@ body {
     color: var(--main-color);
 }
 
+.projectTitle {
+    text-align: center;
+}
+
 .FAIModalWrapper {
     width: 100vw;
     height: 100vh;
@@ -54,7 +58,6 @@ body {
 }
 
 .appListElem {
-    width: 100px;
     height: 50px;
     margin: 0 15px;
     padding: 10px;
