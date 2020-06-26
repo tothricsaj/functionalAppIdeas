@@ -12,8 +12,10 @@ let sliders = document.querySelectorAll('input[type="range"]')
 
 sliders.forEach((el, i) => {
     el.addEventListener('input', () => {
-        console.log(el.value)
+        borderTransform()
     })
 })
+
+borderTransform()
 
 console.log(sliders)
