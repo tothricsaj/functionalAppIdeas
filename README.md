@@ -8,3 +8,4 @@ You can see the results [here](https://tothricsaj.github.io/functionalAppIdeas/)
 
 ## App ideas:
 * [bin to decimal](https://github.com/florinpop17/app-ideas/blob/master/Projects/1-Beginner/Bin2Dec-App.md)
+* [border radius previewer](https://github.com/florinpop17/app-ideas/blob/master/Projects/1-Beginner/Border-Radius-Previewer.md)
